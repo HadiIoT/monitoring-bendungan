@@ -87,6 +87,7 @@ class _PageDuaState extends State<PageDua> {
                                     Get.defaultDialog(
                                       barrierDismissible: false,
                                       textCancel: "Batalkan",
+                                      cancelTextColor: Colors.green,
                                       onCancel: () async {
                                         await updatestatus
                                             .update({'status': 0});
@@ -109,7 +110,7 @@ class _PageDuaState extends State<PageDua> {
                                               style: TextStyle(
                                                   fontFamily: 'Poppins',
                                                   fontSize: 14,
-                                                  color: Colors.green),
+                                                  color: Colors.blue),
                                             )),
                                         TextButton(
                                             onPressed: () async {
@@ -120,7 +121,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.red))),
+                                                    color: Colors.yellow))),
                                         TextButton(
                                             onPressed: () async {
                                               await updatestatus
@@ -130,7 +131,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.blue))),
+                                                    color: Colors.red))),
                                       ],
                                     );
                                   },
@@ -155,6 +156,7 @@ class _PageDuaState extends State<PageDua> {
                                               .update({'status': 0});
                                         },
                                         textCancel: "Batalkan",
+                                        cancelTextColor: Colors.green,
                                         title: "Kirim Informasi",
                                         titleStyle: TextStyle(
                                             fontFamily: 'Poppins',
@@ -175,7 +177,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.green),
+                                                    color: Colors.blue),
                                               )),
                                           TextButton(
                                               onPressed: () async {
@@ -186,7 +188,7 @@ class _PageDuaState extends State<PageDua> {
                                                   style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 14,
-                                                      color: Colors.red))),
+                                                      color: Colors.yellow))),
                                           TextButton(
                                               onPressed: () async {
                                                 await updatestatus
@@ -196,7 +198,7 @@ class _PageDuaState extends State<PageDua> {
                                                   style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 14,
-                                                      color: Colors.blue))),
+                                                      color: Colors.red))),
                                         ],
                                       );
                                     },
@@ -214,7 +216,7 @@ class _PageDuaState extends State<PageDua> {
                                       Get.defaultDialog(
                                         barrierDismissible: false,
                                         textCancel: "Batalkan",
-                                        
+                                        cancelTextColor: Colors.green,
                                         onCancel: () async {
                                           await updatestatus
                                               .update({'status': 0});
@@ -239,7 +241,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.green),
+                                                    color: Colors.blue),
                                               )),
                                           TextButton(
                                               onPressed: () async {
@@ -250,7 +252,7 @@ class _PageDuaState extends State<PageDua> {
                                                   style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 14,
-                                                      color: Colors.red))),
+                                                      color: Colors.yellow))),
                                           TextButton(
                                               onPressed: () async {
                                                 await updatestatus
@@ -260,7 +262,7 @@ class _PageDuaState extends State<PageDua> {
                                                   style: TextStyle(
                                                       fontFamily: 'Poppins',
                                                       fontSize: 14,
-                                                      color: Colors.blue))),
+                                                      color: Colors.red))),
                                         ],
                                       );
                                     },
@@ -278,6 +280,7 @@ class _PageDuaState extends State<PageDua> {
                                     Get.defaultDialog(
                                       barrierDismissible: false,
                                       textCancel: "Batalkan",
+                                      cancelTextColor: Colors.green,
                                       onCancel: () async {
                                         await updatestatus
                                             .update({'status': 0});
@@ -300,7 +303,7 @@ class _PageDuaState extends State<PageDua> {
                                               style: TextStyle(
                                                   fontFamily: 'Poppins',
                                                   fontSize: 14,
-                                                  color: Colors.green),
+                                                  color: Colors.blue),
                                             )),
                                         TextButton(
                                             onPressed: () async {
@@ -311,7 +314,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.red))),
+                                                    color: Colors.yellow))),
                                         TextButton(
                                             onPressed: () async {
                                               await updatestatus
@@ -321,7 +324,7 @@ class _PageDuaState extends State<PageDua> {
                                                 style: TextStyle(
                                                     fontFamily: 'Poppins',
                                                     fontSize: 14,
-                                                    color: Colors.blue))),
+                                                    color: Colors.red))),
                                       ],
                                     );
                                   },
