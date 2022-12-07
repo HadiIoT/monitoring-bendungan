@@ -20,7 +20,7 @@ class chart extends StatelessWidget {
       width: mediaqueryWidth * 0.8,
       child: Sparkline(
         data: datasensor,
-        enableGridLines: true,
+        enableGridLines: false,
 
         gridLineLabelPrecision: 2,
 

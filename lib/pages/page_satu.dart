@@ -384,7 +384,7 @@ class _widgetHomeState extends State<widgetHome> {
                                     color: const Color(0xFF21325E)),
                               ),
                               SizedBox(
-                                width: widget.mediaqueryWidth * 0.4,
+                                width: widget.mediaqueryWidth * 0.35,
                               ),
                               Text(
                                 DateFormat.Hm().format(DateTime.now()),
@@ -630,7 +630,7 @@ class _widgetHomeState extends State<widgetHome> {
                                     fontSize: 14,
                                     color: const Color(0xFF21325E)),
                               ),
-                              SizedBox(width: widget.mediaqueryWidth * 0.4),
+                              SizedBox(width: widget.mediaqueryWidth * 0.35),
                               Text(
                                 DateFormat.Hm().format(DateTime.now()),
                                 style: const TextStyle(
@@ -695,47 +695,47 @@ class _widgetHomeState extends State<widgetHome> {
     ];
 
     return GetBuilder<getdataController>(
-        initState: (state) => print("initstate"),
-        didChangeDependencies: (state) => print("didChange"),
-        didUpdateWidget: (oldwidget, state) => print("initstate"),
-        dispose: (state) => print("dispose"),
+        // initState: (state) => print("initstate"),
+        // didChangeDependencies: (state) => print("didChange"),
+        // didUpdateWidget: (oldwidget, state) => print("initstate"),
+        // dispose: (state) => print("dispose"),
         builder: (c) {
-          return Column(children: [
-            CarouselSlider(
-              items: myData,
-              carouselController: _controller,
-              options: CarouselOptions(
-                  viewportFraction: 1,
-                  height: widget.bodyheight * 0.9,
-                  autoPlay: false,
-                  enlargeCenterPage: true,
-                  onPageChanged: (index, reason) {
-                    setState(() {
-                      _current = index;
-                    });
-                  }),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: myData.asMap().entries.map((entry) {
-                return GestureDetector(
-                  onTap: () => _controller.animateToPage(entry.key),
-                  child: Container(
-                    width: 10.0,
-                    height: 10.0,
-                    margin:
-                        EdgeInsets.symmetric(vertical: 20.0, horizontal: 4.0),
-                    decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: (Theme.of(context).brightness == Brightness.dark
-                                ? Colors.white
-                                : Color.fromARGB(255, 255, 255, 255))
-                            .withOpacity(_current == entry.key ? 0.9 : 0.1)),
-                  ),
-                );
-              }).toList(),
-            ),
-          ]);
-        });
+      return Column(children: [
+        CarouselSlider(
+          items: myData,
+          carouselController: _controller,
+          options: CarouselOptions(
+              viewportFraction: 1,
+              height: widget.bodyheight * 0.9,
+              autoPlay: false,
+              enableInfiniteScroll: false,
+              enlargeCenterPage: true,
+              onPageChanged: (index, reason) {
+                setState(() {
+                  _current = index;
+                });
+              }),
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: myData.asMap().entries.map((entry) {
+            return GestureDetector(
+              onTap: () => _controller.animateToPage(entry.key),
+              child: Container(
+                width: 10.0,
+                height: 10.0,
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 4.0),
+                decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: (Theme.of(context).brightness == Brightness.dark
+                            ? Colors.white
+                            : Color.fromARGB(255, 255, 255, 255))
+                        .withOpacity(_current == entry.key ? 0.9 : 0.1)),
+              ),
+            );
+          }).toList(),
+        ),
+      ]);
+    });
   }
 }
